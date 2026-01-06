@@ -114,7 +114,7 @@
     
       <div class="content has-text-justified">
           <p>
-            Recent advances in video generation have achieved high visual fidelity but continue to suffer from physical hallucinations, where generated motions defy real-world dynamics. To address this, we present a training-free framework that effectively integrates physics simulators into the denoising process of video diffusion models for physics-grounded video generation. Specifically, we align video and simulation spaces by SfM reconstruction, enabling the physics simulator to produce 3D motion trajectories for the video to be synthesized. These simulated 3D motion trajectories are then projected onto the 2D image plane to modulate the video latents via a dynamic mask strategy, ensuring the synthesized motion follows the dynamics simulation. Extensive experiments demonstrate that our method significantly outperforms existing baselines in physical consistency while maintaining competitive visual fidelity.
+            We presents PhysVideo, a novel training-free method for synthesizing videos with physically plausible motion. PhysVideo seamlessly combines the accuracy of physics simulation with the visual expressiveness of video diffusion models. Unlike prior approaches that require training to incorporate physics constraints, our method achieves this synergy at inference time without modifying the underlying model.
           </p>
       </div>
 
