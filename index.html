@@ -71,25 +71,59 @@
     </div>
   </section>
 
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <div class="content has-text-justified">
+  <!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <div class="content has-text-justified">
           <p>
-            <b>PhysVideo</b> integrates physics simulation into video diffusion models without training. 
-            Below: A comparison showing how our method adheres to physical laws (e.g., gravity, collision) better than baselines.
+            Text prompt: A basketball flew through the air and drew a curve. On the indoor floor, there is sufficient light, and the picture is clear.
           </p>
-        </div>
-        <div class="columns is-centered">
-          <div class="column is-10">
-            <video poster="" id="teaser" autoplay controls muted loop playsinline width="100%">
-              <source src="static/videos/teaser.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
       </div>
+  
+      
+      <div class="columns is-centered">
+      <div class="column is-one-three">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/teaser_base.mp4"  type="video/mp4">
+      </video>
+      <p class="subtitle is-6 has-text-centered mb-3">VideoCrafter2-t2v</p>
+      </div>
+
+      <div class="column is-one-three">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/teaser_simulator.mp4"
+        type="video/mp4">
+      </video>
+      <p class="subtitle is-6 has-text-centered mb-3">Physics Simulation</p>
+      </div>
+
+
+      <div class="column is-one-three">
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/teaser.mp4" type="video/mp4">
+        </video>
+      <p class="subtitle is-6 has-text-centered mb-3">VideoCrafter2-t2v + PhysVideo(ours)</p>
+      </div>
+        
+      </div>
+    
+      <div class="content has-text-justified">
+          <p>
+              We presents PhysVideo, a novel training-free method for synthesizing videos with physically plausible motion. PhysVideo seamlessly combines the accuracy of physics simulation with the visual expressiveness of video diffusion models. Unlike prior approaches that require training to incorporate physics constraints, our method achieves this synergy at inference time without modifying the underlying model.
+          </p>
+      </div>
+
+      
     </div>
-  </section>
+  </div>
+</section>
+<!-- End teaser video -->
+
 
   <section class="section hero is-light">
     <div class="container is-max-desktop">
