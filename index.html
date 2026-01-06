@@ -2,43 +2,23 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="description" content="PhysVideo: Training-free Physics-grounded Motion Control for Video Diffusion Models">
+  <meta property="og:title" content="PhysVideo"/>
+  <meta property="og:description" content="Training-free Physics-grounded Motion Control for Video Diffusion Models"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
   <title>PhysVideo: Training-free Physics-grounded Motion Control for Video Diffusion Models</title>
+
   <link rel="icon" type="image/x-icon" href="static/images/head.png">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
@@ -46,605 +26,428 @@
 </head>
 <body>
 
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">PhysVideo: Training-free Physics-grounded Motion Control for Video Diffusion Models</h1>
+            
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span>
-                <a>First Author</a></sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a></sup>,</span>
-                  <span>
-                    <a>Third Author</a></sup>,</span>
-                  </span>
-                  <span>
-                    <a>Fourth Author</a>
-                  </span>
-                  </div>
+              <span class="author-block"><a>Author One</a>,</span>
+              <span class="author-block"><a>Author Two</a>,</span>
+              <span class="author-block"><a>Author Three</a></span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Institution Name<br>Conference Name</span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
                     <span>Code</span>
                   </a>
                 </span>
-
-                <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-
-      <div class="content has-text-justified">
-          <p>
-            Text prompt: A basketball flew through the air and drew a curve. On the indoor floor, there is sufficient light, and the picture is clear.
-          </p>
-      </div>
-  
-      
-      <div class="columns is-centered">
-      <div class="column is-one-three">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/teaser_base.mp4"  type="video/mp4">
-      </video>
-      <p class="subtitle is-6 has-text-centered mb-3">VideoCrafter2-t2v</p>
-      </div>
-
-      <div class="column is-one-three">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/teaser_simulator.mp4"
-        type="video/mp4">
-      </video>
-      <p class="subtitle is-6 has-text-centered mb-3">Physics Simulation</p>
-      </div>
-
-
-      <div class="column is-one-three">
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/teaser.mp4" type="video/mp4">
-        </video>
-      <p class="subtitle is-6 has-text-centered mb-3">VideoCrafter2-t2v + PhysVideo(ours)</p>
-      </div>
-        
-      </div>
-    
-      <div class="content has-text-justified">
-          <p>
-              We presents PhysVideo, a novel training-free method for synthesizing videos with physically plausible motion. PhysVideo seamlessly combines the accuracy of physics simulation with the visual expressiveness of video diffusion models. Unlike prior approaches that require training to incorporate physics constraints, our method achieves this synergy at inference time without modifying the underlying model.
-          </p>
-      </div>
-
-      
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
         <div class="content has-text-justified">
           <p>
-            Most existing video diffusion models struggle to generate physically plausible object motion, despite achieving high visual fidelity. To address this, we introduce PhysVideo, a novel, plug-and-play method that is universally applicable to improve the physical plausibility of videos generated by text-to-video or image-to-video diffusion models without additional training. Our key insight is to integrate physics simulation into the denoising process of video diffusion models, enabling realistic dynamics. To bridge the video diffusion model and the physics simulator, we project the motion trajectory from the 3D simulation space to the 2D image space for motion control. Building on this, we propose to reposition the object within the noisy video frames during the denoising process, ensuring that the object motion is controlled by physics simulation without compromising the visual fidelity. Extensive experiments demonstrate the effectiveness of our method in terms of improved physical plausibility.
+            <b>PhysVideo</b> integrates physics simulation into video diffusion models without training. 
+            Below: A comparison showing how our method adheres to physical laws (e.g., gravity, collision) better than baselines.
           </p>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-10">
+            <video poster="" id="teaser" autoplay controls muted loop playsinline width="100%">
+              <source src="static/videos/teaser.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-
-<section class="section hero">
-    <h2 class="title is-3 has-text-centered">Effectiveness of Motion Control</h2>
-    <div class="hero-body">
-        
-        <div class="container affordance-viz" style="margin-bottom: 20px;">
-            <div class="content has-text-justified">
-                <p>
-                    Text Prompt: A ginger cat jumped from a bench to the ground in the early morning park. The light was clear and the scene was bright.
-                </p>
-              </div>
-
-        <div class="columns is-centered">
-
-        <div class="column is-one-fifth">
-
-              <img src="static/images/1-1.png" alt="MY ALT TEXT" width="210" />
-              <p class="subtitle is-6 has-text-centered mb-3">Image prompt</p>
-  
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                <source src="static/videos/1-1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">Physics simulation</p>
-            
-          </div>
-
-          <div class="column is-one-fifth">
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/m1-base.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">VideoCrafter2-t2v</p>
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/m1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">VideoCrafter2-t2v + PhysVideo(ours)</p>
-          </div>
-  
-          <div class="column is-one-fifth">
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">ZeroScope</p>
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/m1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">VideoCrafter2-t2v + PhysVideo(ours)</p>
-          </div>
-
-          <div class="column is-one-fifth">
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">VideoCrafter-i2v</p>
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">VideoCrafter-i2v + PhysVideo(ours)</p>
-          </div>
-
-           <div class="column is-one-fifth">
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">StableVideoDiffusion-xt-i2v</p>
-
-             <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">StableVideoDiffusion-xt-i2v + PhysVideo(ours)</p>
-          </div>
-
-        </div>
-        </div>
-
-      <div class="container affordance-viz1" style="margin-bottom: 20px;">
-            <div class="content has-text-justified">
-                <p>
-                    Text Prompt: Most existing video diffusion models struggle to generate physically plausible object motion, despite achieving high visual fidelity.
-                </p>
-              </div>
-
-        <div class="columns is-centered">
-
-        <div class="column is-one-fifth">
-
-              
-              <img src="static/images/head.png" alt="MY ALT TEXT" width="210" />
-              <p class="subtitle is-6 has-text-centered mb-3">Image prompt</p>
-  
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                <source src="static/videos/m1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">Physics simulation</p>
-            
-          </div>
-
-          <div class="column is-one-fifth">
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/m1-base.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">VideoCrafter2-t2v</p>
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/m1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">VideoCrafter2-t2v + PhysVideo(ours)</p>
-          </div>
-  
-          <div class="column is-one-fifth">
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">ZeroScope</p>
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/m1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">VideoCrafter2-t2v + PhysVideo(ours)</p>
-          </div>
-
-          <div class="column is-one-fifth">
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">VideoCrafter-i2v</p>
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">VideoCrafter-i2v + PhysVideo(ours)</p>
-          </div>
-
-           <div class="column is-one-fifth">
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">StableVideoDiffusion-xt-i2v</p>
-
-             <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">StableVideoDiffusion-xt-i2v + PhysVideo(ours)</p>
-          </div>
-
-        </div>
-        </div>
-
-
-      <div class="container affordance-viz" style="margin-bottom: 20px;">
-            <div class="content has-text-justified">
-                <p>
-                    Text Prompt: Most existing video diffusion models struggle to generate physically plausible object motion, despite achieving high visual fidelity.
-                </p>
-              </div>
-
-        <div class="columns is-centered">
-
-        <div class="column is-one-fifth">
-
-              
-              <img src="static/images/head.png" alt="MY ALT TEXT" width="210" />
-              <p class="subtitle is-6 has-text-centered mb-3">Image prompt</p>
-  
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                <source src="static/videos/m1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">Physics simulation</p>
-            
-          </div>
-
-          <div class="column is-one-fifth">
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/m1-base.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">VideoCrafter2-t2v</p>
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/m1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">VideoCrafter2-t2v + PhysVideo(ours)</p>
-          </div>
-  
-          <div class="column is-one-fifth">
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">ZeroScope</p>
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/m1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">VideoCrafter2-t2v + PhysVideo(ours)</p>
-          </div>
-
-          <div class="column is-one-fifth">
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">VideoCrafter-i2v</p>
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">VideoCrafter-i2v + PhysVideo(ours)</p>
-          </div>
-
-           <div class="column is-one-fifth">
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">StableVideoDiffusion-xt-i2v</p>
-
-             <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">StableVideoDiffusion-xt-i2v + PhysVideo(ours)</p>
-          </div>
-
-        </div>
-        </div>
-
- 
-      </div>
-      <!-- <script>
-        bulmaCarousel.attach('#results-carousel', {
-          slidesToShow: 3,
-          autoplay: true,
-          infinte: true,
-        });
-      </script> -->
   </section>
 
-
-<section class="section hero">
-    <h2 class="title is-3 has-text-centered">Comparison with Physics-grounded Methods</h2>
-    <div class="hero-body">
-        <div class="container affordance-viz" style="margin-bottom: 20px;">
-        
-        <div class="content has-text-justified">
-              <p>
-              Text prompt: Most existing video diffusion models struggle to generate physically plausible object motion, despite achieving high visual fidelity.
-              </p>
-        </div>
-       
-        <div class="columns is-centered">
-          <div class="column is-one-third">
-
-              <div class="center">
-              <img src="static/images/head.png" alt="MY ALT TEXT" width="340" />
-              <p class="subtitle is-6 has-text-centered mb-3">Image prompt</p>
-              </div>
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">Physics simulation</p>
-          </div>
-  
-          <div class="column is-one-third">
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">LGD</p>
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">VLIPP</p>
-          </div>
-
-          <div class="column is-one-third">
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">PhyT2V</p>
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3"><strong>PhysVideo(ours)</strong></p>
-          </div>
-        </div> 
-        </div>
-
-      
-      <div class="container affordance-viz1" style="margin-bottom: 20px;">
-        
-        <div class="content has-text-justified">
-              <p>
-              Text prompt: Most existing video diffusion models struggle to generate physically plausible object motion, despite achieving high visual fidelity.
-              </p>
-        </div>
-       
-        <div class="columns is-centered">
-          <div class="column is-one-third">
-
-              <div class="center">
-              <img src="static/images/head.png" alt="MY ALT TEXT" width="340" />
-              <p class="subtitle is-6 has-text-centered mb-3">Image prompt</p>
-              </div>
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">Physics simulation</p>
-          </div>
-  
-          <div class="column is-one-third">
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">LGD</p>
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">VLIPP</p>
-          </div>
-
-          <div class="column is-one-third">
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">PhyT2V</p>
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3"><strong>PhysVideo(ours)</strong></p>
-          </div>
-        </div> 
-        </div>
-
-
-
-      <div class="container affordance-viz" style="margin-bottom: 20px;">
-        
-        <div class="content has-text-justified">
-              <p>
-              Text prompt: Most existing video diffusion models struggle to generate physically plausible object motion, despite achieving high visual fidelity.
-              </p>
-        </div>
-       
-        <div class="columns is-centered">
-          <div class="column is-one-third">
-
-              <div class="center">
-              <img src="static/images/head.png" alt="MY ALT TEXT" width="340" />
-              <p class="subtitle is-6 has-text-centered mb-3">Image prompt</p>
-              </div>
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">Physics simulation</p>
-          </div>
-  
-          <div class="column is-one-third">
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">LGD</p>
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">VLIPP</p>
-          </div>
-
-          <div class="column is-one-third">
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3">PhyT2V</p>
-
-              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="static/videos/1.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle is-6 has-text-centered mb-3"><strong>PhysVideo(ours)</strong></p>
-          </div>
-        </div> 
-        </div>
-
-
-      
-      </div>
-      <!-- <script>
-        bulmaCarousel.attach('#results-carousel', {
-          slidesToShow: 3,
-          autoplay: true,
-          infinte: true,
-        });
-      </script> -->
-  </section>
-
-
-
-
-<!-- Youtube video
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      
-      <h2 class="title is-3">Video Presentation</h2>
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Most existing video diffusion models struggle to generate physically plausible object motion, despite achieving high visual fidelity. To address this, we introduce PhysVideo, a novel, plug-and-play method that is universally applicable to improve the physical plausibility of videos generated by text-to-video or image-to-video diffusion models without additional training. Our key insight is to integrate physics simulation into the denoising process of video diffusion models, enabling realistic dynamics. To bridge the video diffusion model and the physics simulator, we project the motion trajectory from the 3D simulation space to the 2D image space for motion control. Building on this, we propose to reposition the object within the noisy video frames during the denoising process, ensuring that the object motion is controlled by physics simulation without compromising the visual fidelity. Extensive experiments demonstrate the effectiveness of our method in terms of improved physical plausibility.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-End youtube video -->
+  </section>
 
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Experimental Results</h2>
+      <div class="content has-text-justified">
+        <p>
+          We compare <strong>PhysVideo</strong> with 7 other baselines/settings across 8 different scenarios.
+          Our method (highlighted) consistently generates motion that is physically grounded while maintaining high visual quality.
+        </p>
+      </div>
 
+      <div class="box" style="margin-bottom: 40px;">
+        <h4 class="title is-4">Case 1: [Modify Prompt Description Here]</h4>
+        <div class="columns is-multiline is-centered">
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Input Image / Prompt</b></p>
+            <img src="static/images/1-1.png" style="width:100%; border-radius:5px;">
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Physics Simulation</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c1-sim.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Base Model (T2V)</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c1-base.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>ZeroScope</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c1-zero.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>I2V Base</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c1-i2v.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>SVD</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c1-svd.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Other Baseline</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c1-other.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered" style="background-color: #f5f5f5; border-radius: 8px;">
+            <p class="is-size-7" style="color: #d9534f;"><b>PhysVideo (Ours)</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c1-ours.mp4" type="video/mp4"></video>
+          </div>
+        </div>
+      </div>
 
+      <div class="box" style="margin-bottom: 40px;">
+        <h4 class="title is-4">Case 2: [Modify Prompt Description Here]</h4>
+        <div class="columns is-multiline is-centered">
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Input Image</b></p>
+            <img src="static/images/head.png" style="width:100%; border-radius:5px;">
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Physics Simulation</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c2-sim.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Base Model (T2V)</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c2-base.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>ZeroScope</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c2-zero.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>I2V Base</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c2-i2v.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>SVD</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c2-svd.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Other Baseline</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c2-other.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered" style="background-color: #f5f5f5; border-radius: 8px;">
+            <p class="is-size-7" style="color: #d9534f;"><b>PhysVideo (Ours)</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c2-ours.mp4" type="video/mp4"></video>
+          </div>
+        </div>
+      </div>
 
+      <div class="box" style="margin-bottom: 40px;">
+        <h4 class="title is-4">Case 3: [Modify Prompt Description Here]</h4>
+        <div class="columns is-multiline is-centered">
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Input Image</b></p>
+            <img src="static/images/head.png" style="width:100%; border-radius:5px;">
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Physics Simulation</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c3-sim.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Base Model (T2V)</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c3-base.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>ZeroScope</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c3-zero.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>I2V Base</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c3-i2v.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>SVD</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c3-svd.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Other Baseline</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c3-other.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered" style="background-color: #f5f5f5; border-radius: 8px;">
+            <p class="is-size-7" style="color: #d9534f;"><b>PhysVideo (Ours)</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c3-ours.mp4" type="video/mp4"></video>
+          </div>
+        </div>
+      </div>
 
-<!--BibTex citation
+      <div class="box" style="margin-bottom: 40px;">
+        <h4 class="title is-4">Case 4: [Modify Prompt Description Here]</h4>
+        <div class="columns is-multiline is-centered">
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Input Image</b></p>
+            <img src="static/images/head.png" style="width:100%; border-radius:5px;">
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Physics Simulation</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c4-sim.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Base Model (T2V)</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c4-base.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>ZeroScope</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c4-zero.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>I2V Base</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c4-i2v.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>SVD</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c4-svd.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Other Baseline</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c4-other.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered" style="background-color: #f5f5f5; border-radius: 8px;">
+            <p class="is-size-7" style="color: #d9534f;"><b>PhysVideo (Ours)</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c4-ours.mp4" type="video/mp4"></video>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" style="margin-bottom: 40px;">
+        <h4 class="title is-4">Case 5: [Modify Prompt Description Here]</h4>
+        <div class="columns is-multiline is-centered">
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Input Image</b></p>
+            <img src="static/images/head.png" style="width:100%; border-radius:5px;">
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Physics Simulation</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c5-sim.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Base Model (T2V)</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c5-base.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>ZeroScope</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c5-zero.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>I2V Base</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c5-i2v.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>SVD</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c5-svd.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Other Baseline</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c5-other.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered" style="background-color: #f5f5f5; border-radius: 8px;">
+            <p class="is-size-7" style="color: #d9534f;"><b>PhysVideo (Ours)</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c5-ours.mp4" type="video/mp4"></video>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" style="margin-bottom: 40px;">
+        <h4 class="title is-4">Case 6: [Modify Prompt Description Here]</h4>
+        <div class="columns is-multiline is-centered">
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Input Image</b></p>
+            <img src="static/images/head.png" style="width:100%; border-radius:5px;">
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Physics Simulation</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c6-sim.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Base Model (T2V)</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c6-base.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>ZeroScope</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c6-zero.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>I2V Base</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c6-i2v.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>SVD</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c6-svd.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Other Baseline</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c6-other.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered" style="background-color: #f5f5f5; border-radius: 8px;">
+            <p class="is-size-7" style="color: #d9534f;"><b>PhysVideo (Ours)</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c6-ours.mp4" type="video/mp4"></video>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" style="margin-bottom: 40px;">
+        <h4 class="title is-4">Case 7: [Modify Prompt Description Here]</h4>
+        <div class="columns is-multiline is-centered">
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Input Image</b></p>
+            <img src="static/images/head.png" style="width:100%; border-radius:5px;">
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Physics Simulation</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c7-sim.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Base Model (T2V)</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c7-base.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>ZeroScope</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c7-zero.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>I2V Base</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c7-i2v.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>SVD</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c7-svd.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Other Baseline</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c7-other.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered" style="background-color: #f5f5f5; border-radius: 8px;">
+            <p class="is-size-7" style="color: #d9534f;"><b>PhysVideo (Ours)</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c7-ours.mp4" type="video/mp4"></video>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" style="margin-bottom: 40px;">
+        <h4 class="title is-4">Case 8: [Modify Prompt Description Here]</h4>
+        <div class="columns is-multiline is-centered">
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Input Image</b></p>
+            <img src="static/images/head.png" style="width:100%; border-radius:5px;">
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Physics Simulation</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c8-sim.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Base Model (T2V)</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c8-base.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>ZeroScope</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c8-zero.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>I2V Base</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c8-i2v.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>SVD</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c8-svd.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <p class="is-size-7"><b>Other Baseline</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c8-other.mp4" type="video/mp4"></video>
+          </div>
+          <div class="column is-one-quarter has-text-centered" style="background-color: #f5f5f5; border-radius: 8px;">
+            <p class="is-size-7" style="color: #d9534f;"><b>PhysVideo (Ours)</b></p>
+            <video autoplay controls muted loop playsinline width="100%"><source src="static/videos/c8-ours.mp4" type="video/mp4"></video>
+          </div>
+        </div>
+      </div>
+      </div>
+  </section>
+
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{physvideo2025,
+  title={PhysVideo: Training-free Physics-grounded Motion Control for Video Diffusion Models},
+  author={Author, First and Author, Second and Author, Third},
+  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  year={2025}
+}</code></pre>
     </div>
-</section>
-End BibTex citation -->
-
+  </section>
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content has-text-centered">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+              <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
